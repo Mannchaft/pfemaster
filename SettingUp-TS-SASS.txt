@@ -1,0 +1,5 @@
+node scripts/setupTypeScript.js
+npm install  
+npm install -D svelte-preprocess 
+npm install -D sass  
+npm run dev    
