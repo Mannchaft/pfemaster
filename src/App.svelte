@@ -1,23 +1,16 @@
 <script lang="ts">
+  import Cards from "./Cards.svelte";
+  import Push from "./Push.svelte";
+
   export let name: string;
-  let a: Boolean;
-  a = false;
-  function click() {
-    if (!a) {
-      name = "Worldi";
-    } else {
-      name = "World";
-    }
-    a = !a;
-  }
 </script>
 
 <main>
-  <h1>Hello {name}!</h1>
-  <button class="button-29" on:click={click}>Slight change</button>
+  <Cards />
+  <Push namee={name} />
 </main>
 
-<style type="text/scss">
+<style lang="scss">
   @import "./styles/vars";
   @import "./styles/classes";
 
